@@ -1,0 +1,36 @@
+module.exports = {
+  siteMetadata: {
+    title: `FW.`,
+    description: `Estudio creativo especializado en diseño gráfico, diseño web, branding y fotografía en Mallorca.`,
+    author: `FW Studio`,
+    siteUrl: `https://www.fwstud.io`
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `FW Studio`,
+        short_name: `FW`,
+        start_url: `/`,
+        background_color: `#fcfcfc`,
+        theme_color: `#fcfcfc`,
+        display: `standalone`,
+        icon: `src/images/logo.png`,
+        include_favicon: true,
+      },
+    },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-robots-txt`
+  ],
+}
