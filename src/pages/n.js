@@ -23,7 +23,6 @@ function Nosotros() {
     <Layout>
       <SEO
         title="FW Studio"
-        keywords={[`diseño gráfico`, `diseño web`, `branding`, `fotografía`]}
       />
       <MainHeading>Nosotros</MainHeading>
       <BodyText>

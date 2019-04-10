@@ -11,7 +11,6 @@ function Contacto() {
     <Layout>
       <SEO
         title="FW Studio"
-        keywords={[`diseño gráfico`, `diseño web`, `branding`, `fotografía`]}
       />
       <MainHeading>Contacto</MainHeading>
       <BodyText>

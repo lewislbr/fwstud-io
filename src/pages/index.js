@@ -149,7 +149,6 @@ function Index() {
     <Layout>
       <SEO
         title="FW Studio"
-        keywords={[`diseño gráfico`, `diseño web`, `branding`, `fotografía`]}
       />
       <HeroText>
         Hola, somos FW, un estudio creativo en el que ayudamos a empresas y
