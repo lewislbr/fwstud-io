@@ -31,6 +31,23 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-robots-txt`
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-134643417-1',
+        head: true,
+        anonymize: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        path: `${__dirname}/src/intl`,
+        languages: [`es`, `en`, `ca`],
+        defaultLanguage: `es`,
+        redirect: true,
+      },
+    },
+    `gatsby-plugin-sitemap`,
   ],
 }
