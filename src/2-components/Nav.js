@@ -148,10 +148,10 @@ function Nav() {
         <Link to="/" activeStyle={NavLinkActive}>
           <NavLink>Inicio</NavLink>
         </Link>
-        <Link to="/nosotros/" activeStyle={NavLinkActive}>
+        <Link to="/n/" activeStyle={NavLinkActive}>
           <NavLink>Nosotros</NavLink>
         </Link>
-        <Link to="/contacto/" activeStyle={NavLinkActive}>
+        <Link to="/c/" activeStyle={NavLinkActive}>
           <NavLink>Contacto</NavLink>
         </Link>
       </NavModal>

@@ -155,7 +155,7 @@ function Layout({ children }) {
           <Wrapper>
             <main>{children}</main>
             <Footer>
-              <Link to="/terminos-y-privacidad/">Términos y privacidad</Link>
+              <Link to="/t&p">Términos y privacidad</Link>
               <p>© {new Date().getFullYear()}, FW Studio</p>
             </Footer>
           </Wrapper>
