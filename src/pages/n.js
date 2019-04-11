@@ -18,7 +18,7 @@ const BodyTextWithMarginBottom = styled(BodyText)`
   margin-bottom: 15vh;
 `;
 
-function Nosotros({ intl }) {
+function About({ intl }) {
   return (
     <Layout>
       <Head title={intl.formatMessage({ id: 'about_title' })} />
@@ -47,4 +47,4 @@ function Nosotros({ intl }) {
   );
 }
 
-export default injectIntl(Nosotros);
+export default injectIntl(About);

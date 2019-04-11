@@ -7,7 +7,7 @@ import MainHeading from '../elements/MainHeading';
 import BodyText from '../elements/BodyText';
 import Button from '../elements/Button';
 
-function Contacto({ intl }) {
+function Contact({ intl }) {
   return (
     <Layout>
       <Head title={intl.formatMessage({ id: 'contact_title' })} />
@@ -29,4 +29,4 @@ function Contacto({ intl }) {
   );
 }
 
-export default injectIntl(Contacto);
+export default injectIntl(Contact);
