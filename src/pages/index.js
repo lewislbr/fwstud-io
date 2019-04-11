@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Head from '../components/Head';
 
 import MainHeading from '../elements/MainHeading';
 import SecondaryHeading from '../elements/SecondaryHeading';
@@ -135,7 +135,7 @@ const TextHome = styled.p`
 function Index({ intl }) {
   return (
     <Layout>
-      <SEO title="FW Studio" />
+      <Head title={intl.formatMessage({ id: 'home_title' })} />
       <HeroText>
         {intl.formatMessage({ id: 'hero_text' })}{' '}
         <HeroTextSpan>

@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { injectIntl } from 'gatsby-plugin-intl';
 
 import Layout from '../components/Layout';
+import Head from '../components/Head';
+
 import MainHeading from '../elements/MainHeading';
 import BodyText from '../elements/BodyText';
 
@@ -13,6 +15,7 @@ const LinkOut = styled.a`
 function Terms({ intl }) {
   return (
     <Layout>
+      <Head title={intl.formatMessage({ id: 't&p_title' })} />
       <MainHeading>{intl.formatMessage({ id: 't&p_title' })}</MainHeading>
       <BodyText>
         {intl.formatMessage({ id: 't&p_text1' })}

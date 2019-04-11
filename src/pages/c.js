@@ -2,7 +2,7 @@ import React from 'react';
 import { injectIntl } from 'gatsby-plugin-intl';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Head from '../components/Head';
 import MainHeading from '../elements/MainHeading';
 import BodyText from '../elements/BodyText';
 import Button from '../elements/Button';
@@ -10,7 +10,7 @@ import Button from '../elements/Button';
 function Contacto({ intl }) {
   return (
     <Layout>
-      <SEO title="FW Studio" />
+      <Head title={intl.formatMessage({ id: 'contact_title' })} />
       <MainHeading>{intl.formatMessage({ id: 'contact_title' })}</MainHeading>
       <BodyText>
         {intl.formatMessage({ id: 'contact_text1' })}

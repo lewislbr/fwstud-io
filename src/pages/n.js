@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Head from '../components/Head';
 import MainHeading from '../elements/MainHeading';
 import BodyText from '../elements/BodyText';
 import fwstudio from '../images/fw-studio.gif';
@@ -21,7 +21,7 @@ const BodyTextWithMarginBottom = styled(BodyText)`
 function Nosotros({ intl }) {
   return (
     <Layout>
-      <SEO title="FW Studio" />
+      <Head title={intl.formatMessage({ id: 'about_title' })} />
       <MainHeading>{intl.formatMessage({ id: 'about_title' })}</MainHeading>
       <BodyText>{intl.formatMessage({ id: 'about_text1' })}</BodyText>
       <ImageUs src={fwstudio} alt="fw studio" />
