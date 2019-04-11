@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { injectIntl } from 'gatsby-plugin-intl';
 
-import Layout from '../2-components/Layout';
-import MainHeading from '../1-elements/MainHeading';
-import BodyText from '../1-elements/BodyText';
+import Layout from '../components/Layout';
+import MainHeading from '../elements/MainHeading';
+import BodyText from '../elements/BodyText';
 
 const LinkOut = styled.a`
   text-decoration: underline;

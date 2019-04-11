@@ -1,12 +1,12 @@
 import React from 'react';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import Layout from '../2-components/Layout';
-import SEO from '../2-components/SEO';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
-import MainHeading from '../1-elements/MainHeading';
-import BodyText from '../1-elements/BodyText';
-import Button from '../1-elements/Button';
+import MainHeading from '../elements/MainHeading';
+import BodyText from '../elements/BodyText';
+import Button from '../elements/Button';
 
 function NotFoundPage({ intl }) {
   return (

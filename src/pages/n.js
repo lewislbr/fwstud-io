@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import Layout from '../2-components/Layout';
-import SEO from '../2-components/SEO';
-import MainHeading from '../1-elements/MainHeading';
-import BodyText from '../1-elements/BodyText';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import MainHeading from '../elements/MainHeading';
+import BodyText from '../elements/BodyText';
 import fwstudio from '../images/fw-studio.gif';
-import SecondaryHeading from '../1-elements/SecondaryHeading';
-import Button from '../1-elements/Button';
+import SecondaryHeading from '../elements/SecondaryHeading';
+import Button from '../elements/Button';
 
 const ImageUs = styled.img`
   margin: 0 auto 3vh auto;
