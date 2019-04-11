@@ -35,14 +35,8 @@ const Bar = styled.header`
 `;
 
 const Wrapper = styled.div`
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-between;
-  -ms-flex-pack: space-between;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   height: 100%;
   max-width: 1400px;

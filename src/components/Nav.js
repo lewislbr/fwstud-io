@@ -4,21 +4,13 @@ import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 const NavIcon = styled.label`
   height: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 
   width: 33px;
   padding: 10px;
-  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
   cursor: pointer;
   -webkit-tap-highlight-color: hsla(0, 0%, 0%, 0);
@@ -38,9 +30,7 @@ const NavIconLine = styled.span`
   border-radius: 20px;
   opacity: 1;
   left: 0;
-  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
 
   @media (max-width: 849px) {
@@ -76,12 +66,10 @@ const Input = styled.input`
       left: 50%;
     }
     ${NavIconLine2} {
-      -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
       width: 100%;
     }
     ${NavIconLine3} {
-      -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
       width: 100%;
     }

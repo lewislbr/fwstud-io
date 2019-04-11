@@ -100,10 +100,6 @@ const GlobalStyles = createGlobalStyle`
       font-size: 18px;
     }
   }
-
-  body.noscroll {
-    overflow: hidden;
-  }
 `;
 
 const Wrapper = styled.div`
