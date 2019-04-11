@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 const NavIcon = styled.label`
   height: 75%;
@@ -134,7 +134,7 @@ const NavLinkActive = {
   textDecoration: 'underline',
 };
 
-function Nav() {
+function Nav({ intl }) {
   return (
     <React.Fragment>
       <Input type="checkbox" id="menu" />
@@ -146,17 +146,17 @@ function Nav() {
       </NavIcon>
       <NavModal id="nav">
         <Link to="/" activeStyle={NavLinkActive}>
-          <NavLink>Inicio</NavLink>
+          <NavLink>{intl.formatMessage({ id: 'nav_link1' })}</NavLink>
         </Link>
         <Link to="/n/" activeStyle={NavLinkActive}>
-          <NavLink>Nosotros</NavLink>
+          <NavLink>{intl.formatMessage({ id: 'nav_link2' })}</NavLink>
         </Link>
         <Link to="/c/" activeStyle={NavLinkActive}>
-          <NavLink>Contacto</NavLink>
+          <NavLink>{intl.formatMessage({ id: 'nav_link3' })}</NavLink>
         </Link>
       </NavModal>
     </React.Fragment>
   );
 }
 
-export default Nav;
+export default injectIntl(Nav);

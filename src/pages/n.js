@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import Layout from '../2-components/Layout';
 import SEO from '../2-components/SEO';
@@ -18,44 +18,33 @@ const BodyTextWithMarginBottom = styled(BodyText)`
   margin-bottom: 15vh;
 `;
 
-function Nosotros() {
+function Nosotros({ intl }) {
   return (
     <Layout>
-      <SEO
-        title="FW Studio"
-      />
-      <MainHeading>Nosotros</MainHeading>
-      <BodyText>
-        Hola, somos María y Luis, una pareja de creativos de Mallorca.
-      </BodyText>
+      <SEO title="FW Studio" />
+      <MainHeading>{intl.formatMessage({ id: 'about_title' })}</MainHeading>
+      <BodyText>{intl.formatMessage({ id: 'about_text1' })}</BodyText>
       <ImageUs src={fwstudio} alt="fw studio" />
       <BodyTextWithMarginBottom>
-        Lo que hacemos es simple: diseñamos aquello que conecta tu marca o
-        empresa con tu audiencia o clientes. Puede ser algo tangible como un
-        color o algo intangible como la experiencia de usar una web. Cualquier
-        detalle cuenta.
+        {intl.formatMessage({ id: 'about_text2' })}
         <br />
         <br />
-        La correcta aplicación de una tipografía o el número de clicks
-        necesarios para llegar a una acción influyen en la percepción que los
-        usuarios tienen de una marca. Y queremos hacer que sea lo más positiva
-        posible.
+        {intl.formatMessage({ id: 'about_text3' })}
         <br />
         <br />
-        Para conseguir eso usamos el diseño gráfico y el branding, de lo que se
-        encarga María, y el diseño web y la fotografía, de lo que encarga Luis.
+        {intl.formatMessage({ id: 'about_text4' })}
         <br />
         <br />
-        Previamente hemos desempeñado trabajos relacionados con el sector en
-        diversas empresas y de manera autónoma hasta que hemos decidido empezar
-        este proyecto en común.
+        {intl.formatMessage({ id: 'about_text5' })}
       </BodyTextWithMarginBottom>
-      <SecondaryHeading>¿Tienes algún proyecto en mente?</SecondaryHeading>
+      <SecondaryHeading>
+        {intl.formatMessage({ id: 'secondary_heading2' })}
+      </SecondaryHeading>
       <Link to="/contacto/">
-        <Button>Hablemos</Button>
+        <Button>{intl.formatMessage({ id: 'cta_button' })}</Button>
       </Link>
     </Layout>
   );
 }
 
-export default Nosotros;
+export default injectIntl(Nosotros);

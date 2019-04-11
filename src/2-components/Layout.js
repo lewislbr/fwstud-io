@@ -1,15 +1,8 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-import { Link } from 'gatsby';
 import styled, { createGlobalStyle } from 'styled-components';
+import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import Header from './Header';
 import * as font from '../fonts/font.js';
@@ -136,7 +129,7 @@ const Footer = styled.footer`
   }
 `;
 
-function Layout({ children }) {
+function Layout({ children, intl }) {
   return (
     <StaticQuery
       query={graphql`
@@ -155,8 +148,11 @@ function Layout({ children }) {
           <Wrapper>
             <main>{children}</main>
             <Footer>
-              <Link to="/t&p">Términos y privacidad</Link>
-              <p>© {new Date().getFullYear()}, FW Studio</p>
+              <Link to="/t&p">{intl.formatMessage({ id: 'legal' })}</Link>
+              <p>
+                © {new Date().getFullYear()},{' '}
+                {intl.formatMessage({ id: 'title' })}
+              </p>
             </Footer>
           </Wrapper>
         </>
@@ -169,4 +165,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default injectIntl(Layout);

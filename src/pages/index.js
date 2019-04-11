@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import Layout from '../2-components/Layout';
 import SEO from '../2-components/SEO';
@@ -144,80 +144,138 @@ const TextHome = styled.p`
   }
 `;
 
-function Index() {
+function Index({ intl }) {
   return (
     <Layout>
-      <SEO
-        title="FW Studio"
-      />
+      <SEO title="FW Studio" />
       <HeroText>
-        Hola, somos FW, un estudio creativo en el que ayudamos a empresas y
-        marcas a ser <HeroTextSpan>únicas</HeroTextSpan>.
+        {intl.formatMessage({ id: 'hero_text1' })}{' '}
+        <HeroTextSpan>
+          {intl.formatMessage({ id: 'hero_text_span' })}
+        </HeroTextSpan>
+        {intl.formatMessage({ id: 'hero_text2' })}
       </HeroText>
-      <SecondaryHeading>Cosas que hacemos</SecondaryHeading>
+      <SecondaryHeading>
+        {intl.formatMessage({ id: 'secondary_heading1' })}
+      </SecondaryHeading>
       <Services>
         <Service>
           <ServiceImage src={graphicdesign} alt="diseño gráfico" />
           <ServiceDetails>
-            <ServiceName>Diseño Gráfico</ServiceName>
-            <Subservice>Carteles</Subservice>
-            <Subservice>Publicidad</Subservice>
-            <Subservice>Packaging</Subservice>
-            <Subservice>Libros y revistas</Subservice>
-            <Subservice>Catálogos</Subservice>
-            <Subservice>Ilustraciones</Subservice>
+            <ServiceName>
+              {intl.formatMessage({ id: 'service1_name' })}
+            </ServiceName>
+            <Subservice>
+              {intl.formatMessage({ id: 'service1_description1' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service1_description2' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service1_description3' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service1_description4' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service1_description5' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service1_description6' })}
+            </Subservice>
           </ServiceDetails>
         </Service>
         <Service>
           <ServiceImage src={webdesign} alt="diseño web" />
           <ServiceDetails>
-            <ServiceName>Diseño Web</ServiceName>
-            <Subservice>Experiencia de usuario (UX)</Subservice>
-            <Subservice>Diseño de interfaces (UI)</Subservice>
-            <Subservice>Desarrollo web</Subservice>
-            <Subservice>Copywriting</Subservice>
-            <Subservice>CMS</Subservice>
-            <Subservice>E-commerce</Subservice>
+            <ServiceName>
+              {intl.formatMessage({ id: 'service2_name' })}
+            </ServiceName>
+            <Subservice>
+              {intl.formatMessage({ id: 'service2_description1' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service2_description2' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service2_description3' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service2_description4' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service2_description5' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service2_description6' })}
+            </Subservice>
           </ServiceDetails>
         </Service>
         <Service>
           <ServiceImage src={branding} alt="branding" />
           <ServiceDetails>
-            <ServiceName>Branding</ServiceName>
-            <Subservice>Estrategia de marca</Subservice>
-            <Subservice>Diseño de logotipos</Subservice>
-            <Subservice>Creación de marcas</Subservice>
-            <Subservice>Presencia online y offline</Subservice>
-            <Subservice>Sistemas de identidad</Subservice>
-            <Subservice>Renovación de marcas</Subservice>
+            <ServiceName>
+              {intl.formatMessage({ id: 'service3_name' })}
+            </ServiceName>
+            <Subservice>
+              {intl.formatMessage({ id: 'service3_description1' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service3_description2' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service3_description3' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service3_description4' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service3_description5' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service3_description6' })}
+            </Subservice>
           </ServiceDetails>
         </Service>
         <Service>
           <ServiceImage src={photography} alt="fotografia" />
           <ServiceDetails>
-            <ServiceName>Fotografía</ServiceName>
-            <Subservice>Redes sociales</Subservice>
-            <Subservice>Producto</Subservice>
-            <Subservice>Publicidad</Subservice>
-            <Subservice>Web</Subservice>
-            <Subservice>Espacios</Subservice>
-            <Subservice>Edición</Subservice>
+            <ServiceName>
+              {intl.formatMessage({ id: 'service4_name' })}
+            </ServiceName>
+            <Subservice>
+              {intl.formatMessage({ id: 'service4_description1' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service4_description2' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service4_description3' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service4_description4' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service4_description5' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service4_description6' })}
+            </Subservice>
           </ServiceDetails>
         </Service>
       </Services>
       <TextHome>
-        Nuestro enfoque es simple y pragmático, juntando la estética y la
-        funcionalidad, puesto que la una sin la otra no generan resultados.
+        {intl.formatMessage({ id: 'home_text1' })}
         <br />
         <br />
-        Queremos hacer de lo bueno, lo mejor 🔥.
+        {intl.formatMessage({ id: 'home_text2' })}
       </TextHome>
-      <SecondaryHeading>¿Tienes algún proyecto en mente?</SecondaryHeading>
+      <SecondaryHeading>{intl.formatMessage({ id: 'secondary_heading2' })}</SecondaryHeading>
       <Link to="/contacto/">
-        <Button>Hablemos</Button>
+        <Button>{intl.formatMessage({ id: 'cta_button' })}</Button>
       </Link>
     </Layout>
   );
 }
 
-export default Index;
+export default injectIntl(Index);
