@@ -18,13 +18,13 @@ function Contacto({ intl }) {
         <br />
         {intl.formatMessage({ id: 'contact_text2' })}
       </BodyText>
-      <Button>
-        <a href="mailto:info@fwstud.io">info@fwstud.io</a>
-      </Button>
+      <a href="mailto:info@fwstud.io">
+        <Button>info@fwstud.io</Button>
+      </a>
       <BodyText>{intl.formatMessage({ id: 'contact_text3' })}</BodyText>
-      <Button>
-        <a href="tel:687131061">687 131 061</a>
-      </Button>
+      <a href="tel:687131061">
+        <Button>687 131 061</Button>
+      </a>
     </Layout>
   );
 }
