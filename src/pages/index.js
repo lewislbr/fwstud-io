@@ -149,11 +149,11 @@ function Index({ intl }) {
     <Layout>
       <SEO title="FW Studio" />
       <HeroText>
-        {intl.formatMessage({ id: 'hero_text1' })}{' '}
+        {intl.formatMessage({ id: 'hero_text' })}{' '}
         <HeroTextSpan>
           {intl.formatMessage({ id: 'hero_text_span' })}
         </HeroTextSpan>
-        {intl.formatMessage({ id: 'hero_text2' })}
+        .
       </HeroText>
       <SecondaryHeading>
         {intl.formatMessage({ id: 'secondary_heading1' })}
@@ -270,7 +270,9 @@ function Index({ intl }) {
         <br />
         {intl.formatMessage({ id: 'home_text2' })}
       </TextHome>
-      <SecondaryHeading>{intl.formatMessage({ id: 'secondary_heading2' })}</SecondaryHeading>
+      <SecondaryHeading>
+        {intl.formatMessage({ id: 'secondary_heading2' })}
+      </SecondaryHeading>
       <Link to="/contacto/">
         <Button>{intl.formatMessage({ id: 'cta_button' })}</Button>
       </Link>
