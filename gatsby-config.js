@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: `FW.`,
-    description: `Estudio creativo especializado en diseño gráfico, diseño web, branding y fotografía en Mallorca.`,
     author: `FW Studio`,
     siteUrl: `https://www.fwstud.io`
   },
