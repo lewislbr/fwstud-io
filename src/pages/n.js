@@ -40,7 +40,7 @@ function Nosotros({ intl }) {
       <SecondaryHeading>
         {intl.formatMessage({ id: 'secondary_heading2' })}
       </SecondaryHeading>
-      <Link to="/contacto/">
+      <Link to="/c">
         <Button>{intl.formatMessage({ id: 'cta_button' })}</Button>
       </Link>
     </Layout>
