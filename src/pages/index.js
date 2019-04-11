@@ -46,20 +46,12 @@ const Service = styled.div`
   overflow: hidden;
 
   border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 16px 5px hsla(0, 0%, 50%, 0.22);
   box-shadow: 1px 1px 16px 5px hsla(0, 0%, 50%, 0.22);
 
   @media (max-width: 849px) {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     padding: 4vw;
     margin-bottom: 3vh;
