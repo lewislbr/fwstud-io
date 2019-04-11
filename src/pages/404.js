@@ -13,7 +13,12 @@ function NotFoundPage({ intl }) {
     <Layout>
       <SEO title="404: Not found" />
       <MainHeading>{intl.formatMessage({ id: 'notfound_title' })}</MainHeading>
-      <BodyText>{intl.formatMessage({ id: 'notfound_text' })}</BodyText>
+      <BodyText>
+        {intl.formatMessage({ id: 'notfound_text' })}{' '}
+        <span role="img" aria-label="duh">
+          😓
+        </span>
+      </BodyText>
       <Link to="/">
         <Button>{intl.formatMessage({ id: 'notfound_button' })}</Button>
       </Link>

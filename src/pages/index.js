@@ -268,7 +268,11 @@ function Index({ intl }) {
         {intl.formatMessage({ id: 'home_text1' })}
         <br />
         <br />
-        {intl.formatMessage({ id: 'home_text2' })}
+        {intl.formatMessage({ id: 'home_text2' })}{' '}
+        <span role="img" aria-label="fire">
+          🔥
+        </span>
+        .
       </TextHome>
       <SecondaryHeading>
         {intl.formatMessage({ id: 'secondary_heading2' })}
