@@ -8,6 +8,7 @@ import Head from '../components/Head';
 import MainHeading from '../elements/MainHeading';
 import SecondaryHeading from '../elements/SecondaryHeading';
 import Button from '../elements/Button';
+
 import graphicdesign from '../images/graphic-design.png';
 import webdesign from '../images/web-design.png';
 import branding from '../images/branding.png';
