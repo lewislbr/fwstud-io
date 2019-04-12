@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import Nav from './Nav';
 
@@ -59,13 +58,13 @@ const Logo = styled.p`
   }
 `;
 
-function Header({ pageTitle }) {
+function Header({ intl }) {
   return (
     <Bar>
       <TopLine />
       <Wrapper>
         <Logo>
-          <Link to="/">{pageTitle}</Link>
+          <Link to="/">{intl.formatMessage({ id: 'logo' })}</Link>
         </Logo>
         <Nav />
       </Wrapper>
@@ -73,12 +72,4 @@ function Header({ pageTitle }) {
   );
 }
 
-Header.propTypes = {
-  pageTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  pageTitle: ``,
-};
-
-export default Header;
+export default injectIntl(Header);
