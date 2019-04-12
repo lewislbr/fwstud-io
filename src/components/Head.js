@@ -1,15 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { injectIntl } from 'gatsby-plugin-intl';
 
-function Head({ lang, title, intl }) {
+function Head({ intl }) {
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
+      htmlAttributes={{ lang: `${intl.formatMessage({ id: 'lang' })}`, }}
+      title={intl.formatMessage({ id: 'title' })}
       titleTemplate={`%s ― ${intl.formatMessage({ id: 'title' })}`}
       meta={[
         {
@@ -32,19 +29,5 @@ function Head({ lang, title, intl }) {
     />
   );
 }
-
-Head.defaultProps = {
-  lang: `es`,
-  meta: [],
-  description: ``,
-};
-
-Head.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
-};
 
 export default injectIntl(Head);
