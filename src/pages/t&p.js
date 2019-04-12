@@ -5,8 +5,8 @@ import { injectIntl } from 'gatsby-plugin-intl';
 import Layout from '../components/Layout';
 import Head from '../components/Head';
 
-import MainHeading from '../elements/MainHeading';
-import BodyText from '../elements/BodyText';
+import Heading1 from '../elements/Heading1';
+import TextBody from '../elements/TextBody';
 
 const LinkOut = styled.a`
   text-decoration: underline;
@@ -16,8 +16,8 @@ function Terms({ intl }) {
   return (
     <Layout>
       <Head title={intl.formatMessage({ id: 't&p_title' })} />
-      <MainHeading>{intl.formatMessage({ id: 't&p_title' })}</MainHeading>
-      <BodyText>
+      <Heading1>{intl.formatMessage({ id: 't&p_title' })}</Heading1>
+      <TextBody>
         {intl.formatMessage({ id: 't&p_text1' })}
         <br />
         <br />
@@ -52,7 +52,7 @@ function Terms({ intl }) {
         <br />
         <br />
         {intl.formatMessage({ id: 't&p_text9' })}
-      </BodyText>
+      </TextBody>
     </Layout>
   );
 }

@@ -5,8 +5,8 @@ import { injectIntl, Link } from 'gatsby-plugin-intl';
 import Layout from '../components/Layout';
 import Head from '../components/Head';
 
-import MainHeading from '../elements/MainHeading';
-import SecondaryHeading from '../elements/SecondaryHeading';
+import Heading1 from '../elements/Heading1';
+import Heading2 from '../elements/Heading2';
 import Button from '../elements/Button';
 
 import graphicdesign from '../images/graphic-design.png';
@@ -14,7 +14,7 @@ import webdesign from '../images/web-design.png';
 import branding from '../images/branding.png';
 import photography from '../images/photography.png';
 
-const HeroText = styled(MainHeading)`
+const HeroText = styled(Heading1)`
   margin-bottom: 25vh;
 
   @media (max-width: 849px) {
@@ -136,9 +136,9 @@ function Index({ intl }) {
         </HeroTextSpan>
         .
       </HeroText>
-      <SecondaryHeading>
+      <Heading2>
         {intl.formatMessage({ id: 'secondary_heading1' })}
-      </SecondaryHeading>
+      </Heading2>
       <Services>
         <Service>
           <ServiceImage src={graphicdesign} alt="diseño gráfico" />
@@ -255,9 +255,9 @@ function Index({ intl }) {
         </span>
         .
       </TextHome>
-      <SecondaryHeading>
+      <Heading2>
         {intl.formatMessage({ id: 'secondary_heading2' })}
-      </SecondaryHeading>
+      </Heading2>
       <Link to="/c">
         <Button>{intl.formatMessage({ id: 'cta_button' })}</Button>
       </Link>

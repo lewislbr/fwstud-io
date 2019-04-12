@@ -4,17 +4,17 @@ import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import Layout from '../components/Layout';
 import Head from '../components/Head';
-import MainHeading from '../elements/MainHeading';
-import BodyText from '../elements/BodyText';
+import Heading1 from '../elements/Heading1';
+import TextBody from '../elements/TextBody';
 import fwstudio from '../images/fw-studio.gif';
-import SecondaryHeading from '../elements/SecondaryHeading';
+import Heading2 from '../elements/Heading2';
 import Button from '../elements/Button';
 
 const ImageUs = styled.img`
   margin: 0 auto 3vh auto;
 `;
 
-const BodyTextWithMarginBottom = styled(BodyText)`
+const TextBodyWithMarginBottom = styled(TextBody)`
   margin-bottom: 15vh;
 `;
 
@@ -22,10 +22,10 @@ function About({ intl }) {
   return (
     <Layout>
       <Head title={intl.formatMessage({ id: 'about_title' })} />
-      <MainHeading>{intl.formatMessage({ id: 'about_title' })}</MainHeading>
-      <BodyText>{intl.formatMessage({ id: 'about_text1' })}</BodyText>
+      <Heading1>{intl.formatMessage({ id: 'about_title' })}</Heading1>
+      <TextBody>{intl.formatMessage({ id: 'about_text1' })}</TextBody>
       <ImageUs src={fwstudio} alt="fw studio" />
-      <BodyTextWithMarginBottom>
+      <TextBodyWithMarginBottom>
         {intl.formatMessage({ id: 'about_text2' })}
         <br />
         <br />
@@ -36,10 +36,10 @@ function About({ intl }) {
         <br />
         <br />
         {intl.formatMessage({ id: 'about_text5' })}
-      </BodyTextWithMarginBottom>
-      <SecondaryHeading>
+      </TextBodyWithMarginBottom>
+      <Heading2>
         {intl.formatMessage({ id: 'secondary_heading2' })}
-      </SecondaryHeading>
+      </Heading2>
       <Link to="/c">
         <Button>{intl.formatMessage({ id: 'cta_button' })}</Button>
       </Link>
