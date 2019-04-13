@@ -140,33 +140,7 @@ function Index({ intl }) {
         {intl.formatMessage({ id: 'secondary_heading1' })}
       </Heading2>
       <Services>
-        <Service>
-          <ServiceImage src={graphicdesign} alt="diseño gráfico" />
-          <ServiceDetails>
-            <ServiceName>
-              {intl.formatMessage({ id: 'service1_name' })}
-            </ServiceName>
-            <Subservice>
-              {intl.formatMessage({ id: 'service1_description1' })}
-            </Subservice>
-            <Subservice>
-              {intl.formatMessage({ id: 'service1_description2' })}
-            </Subservice>
-            <Subservice>
-              {intl.formatMessage({ id: 'service1_description3' })}
-            </Subservice>
-            <Subservice>
-              {intl.formatMessage({ id: 'service1_description4' })}
-            </Subservice>
-            <Subservice>
-              {intl.formatMessage({ id: 'service1_description5' })}
-            </Subservice>
-            <Subservice>
-              {intl.formatMessage({ id: 'service1_description6' })}
-            </Subservice>
-          </ServiceDetails>
-        </Service>
-        <Service>
+      <Service>
           <ServiceImage src={webdesign} alt="diseño web" />
           <ServiceDetails>
             <ServiceName>
@@ -186,9 +160,6 @@ function Index({ intl }) {
             </Subservice>
             <Subservice>
               {intl.formatMessage({ id: 'service2_description5' })}
-            </Subservice>
-            <Subservice>
-              {intl.formatMessage({ id: 'service2_description6' })}
             </Subservice>
           </ServiceDetails>
         </Service>
@@ -213,8 +184,28 @@ function Index({ intl }) {
             <Subservice>
               {intl.formatMessage({ id: 'service3_description5' })}
             </Subservice>
+          </ServiceDetails>
+        </Service>
+        <Service>
+          <ServiceImage src={graphicdesign} alt="diseño gráfico" />
+          <ServiceDetails>
+            <ServiceName>
+              {intl.formatMessage({ id: 'service1_name' })}
+            </ServiceName>
             <Subservice>
-              {intl.formatMessage({ id: 'service3_description6' })}
+              {intl.formatMessage({ id: 'service1_description1' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service1_description2' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service1_description3' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service1_description4' })}
+            </Subservice>
+            <Subservice>
+              {intl.formatMessage({ id: 'service1_description5' })}
             </Subservice>
           </ServiceDetails>
         </Service>
@@ -238,9 +229,6 @@ function Index({ intl }) {
             </Subservice>
             <Subservice>
               {intl.formatMessage({ id: 'service4_description5' })}
-            </Subservice>
-            <Subservice>
-              {intl.formatMessage({ id: 'service4_description6' })}
             </Subservice>
           </ServiceDetails>
         </Service>
