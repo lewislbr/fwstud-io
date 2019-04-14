@@ -124,7 +124,7 @@ const NavLinkActive = {
 
 function Nav({ intl }) {
   return (
-    <React.Fragment>
+    <>
       <Input type="checkbox" id="menu" />
       <NavIcon for="menu">
         <NavIconLine1 />
@@ -143,7 +143,7 @@ function Nav({ intl }) {
           <NavLink>{intl.formatMessage({ id: 'nav_link3' })}</NavLink>
         </Link>
       </NavModal>
-    </React.Fragment>
+    </>
   );
 }
 
