@@ -59,7 +59,7 @@ img {
 
 @font-face {
   font-family: "NKGW";
-  src: local('NKGW400'), url('${font.NKGW400}') format("woff");
+  src: local('NKGW400'), url('${font.NKGW400}') format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: block;
@@ -67,7 +67,7 @@ img {
 
 @font-face {
   font-family: "NKGW";
-  src: local('NKGW700'), url('${font.NKGW700}') format("woff");
+  src: local('NKGW700'), url('${font.NKGW700}') format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: block;
