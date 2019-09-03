@@ -21,10 +21,6 @@ function Contact({ intl }) {
       <a href="mailto:info@fwstud.io">
         <Button>info@fwstud.io</Button>
       </a>
-      <TextBody>{intl.formatMessage({ id: 'contact_text3' })}</TextBody>
-      <a href="tel:687131061">
-        <Button>687 131 061</Button>
-      </a>
     </Layout>
   );
 }
