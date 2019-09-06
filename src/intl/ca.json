@@ -1,7 +1,7 @@
 {
   "lang": "ca",
   "title": "FW Studio",
-  "description": "Estudi creatiu especialitzat en disseny gràfic, disseny web, branding i fotografia a Mallorca.",
+  "description": "Estudi creatiu especialitzat en disseny web, disseny gràfic i branding a Mallorca.",
   "author": "@fwstudio",
 
   "logo": "FW.",
@@ -10,7 +10,7 @@
   "nav_link2": "Nosaltres",
   "nav_link3": "Contact",
 
-  "home_title": "Disseny web, branding, disseny gràfic, fotografia",
+  "home_title": "Disseny web, branding, disseny gràfic",
 
   "hero_text": "Hola, som FW, un estudi creatiu en el qual ajudem a empreses i marques a ser",
   "hero_text_span": "úniques",
@@ -37,13 +37,6 @@
   "service3_description3": "Presència online i offline",
   "service3_description4": "Sistemes d'identitat",
   "service3_description5": "Renovació de marques",
-
-  "service4_name": "Fotos",
-  "service4_description1": "D'espais",
-  "service4_description2": "De producte",
-  "service4_description3": "Per a publicitat",
-  "service4_description4": "Per a web",
-  "service4_description5": "Per a xarxes socials",
 
   "home_text1": "El nostre enfocament és simple i pragmàtic, ajuntant l'estètica i la funcionalitat, ja que l'una sense l'altra no generen resultats.",
   "home_text2": "Volem fer del bo, el millor",

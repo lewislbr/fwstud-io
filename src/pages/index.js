@@ -12,7 +12,6 @@ import Button from '../elements/Button';
 import graphicdesign from '../images/graphic-design.png';
 import webdesign from '../images/web-design.png';
 import branding from '../images/branding.png';
-import photography from '../images/photography.png';
 
 const HeroText = styled(Heading1)`
   margin-bottom: 25vh;
@@ -136,11 +135,9 @@ function Index({ intl }) {
         </HeroTextSpan>
         .
       </HeroText>
-      <Heading2>
-        {intl.formatMessage({ id: 'secondary_heading1' })}
-      </Heading2>
+      <Heading2>{intl.formatMessage({ id: 'secondary_heading1' })}</Heading2>
       <Services>
-      <Service>
+        <Service>
           <ServiceImage src={webdesign} alt="diseño web" />
           <ServiceDetails>
             <ServiceName>
@@ -209,29 +206,6 @@ function Index({ intl }) {
             </Subservice>
           </ServiceDetails>
         </Service>
-        <Service>
-          <ServiceImage src={photography} alt="fotografia" />
-          <ServiceDetails>
-            <ServiceName>
-              {intl.formatMessage({ id: 'service4_name' })}
-            </ServiceName>
-            <Subservice>
-              {intl.formatMessage({ id: 'service4_description1' })}
-            </Subservice>
-            <Subservice>
-              {intl.formatMessage({ id: 'service4_description2' })}
-            </Subservice>
-            <Subservice>
-              {intl.formatMessage({ id: 'service4_description3' })}
-            </Subservice>
-            <Subservice>
-              {intl.formatMessage({ id: 'service4_description4' })}
-            </Subservice>
-            <Subservice>
-              {intl.formatMessage({ id: 'service4_description5' })}
-            </Subservice>
-          </ServiceDetails>
-        </Service>
       </Services>
       <TextHome>
         {intl.formatMessage({ id: 'home_text1' })}
@@ -243,9 +217,7 @@ function Index({ intl }) {
         </span>
         .
       </TextHome>
-      <Heading2>
-        {intl.formatMessage({ id: 'secondary_heading2' })}
-      </Heading2>
+      <Heading2>{intl.formatMessage({ id: 'secondary_heading2' })}</Heading2>
       <Link to="/c">
         <Button>{intl.formatMessage({ id: 'cta_button' })}</Button>
       </Link>
