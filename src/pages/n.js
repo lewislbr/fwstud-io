@@ -10,7 +10,6 @@ import {
   Layout,
   TextBody,
 } from '../components';
-
 import { fwstudio } from '../assets/images';
 
 const ImageUs = styled.img`

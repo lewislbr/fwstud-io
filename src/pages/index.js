@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import { Button, Head, Heading1, Heading2, Layout } from '../components';
-
 import { branding, graphicdesign, webdesign } from '../assets/images';
 
 const HeroText = styled(Heading1)`
