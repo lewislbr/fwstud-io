@@ -15,29 +15,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `FW Studio`,
-        short_name: `FW`,
-        start_url: `/`,
-        background_color: `#fcfcfc`,
-        theme_color: `#fcfcfc`,
-        display: `standalone`,
-        icon: `src/assets/images/logo.png`,
-        include_favicon: true,
-      },
-    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-134643417-1',
-        head: true,
-        anonymize: true,
-      },
-    },
     {
       resolve: `gatsby-plugin-intl`,
       options: {
