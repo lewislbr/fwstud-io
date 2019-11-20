@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `FW.`,
     author: `FW Studio`,
-    siteUrl: `https://www.fwstud.io`
+    siteUrl: `https://www.fwstud.io`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#fcfcfc`,
         theme_color: `#fcfcfc`,
         display: `standalone`,
-        icon: `src/images/logo.png`,
+        icon: `src/assets/images/logo.png`,
         include_favicon: true,
       },
     },
@@ -50,4 +50,4 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
   ],
-}
+};

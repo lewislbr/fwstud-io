@@ -122,7 +122,7 @@ const NavLinkActive = {
   textDecoration: 'underline',
 };
 
-function Nav({ intl }) {
+export const Nav = injectIntl(({ intl }) => {
   return (
     <>
       <Input type="checkbox" id="menu" />
@@ -145,6 +145,4 @@ function Nav({ intl }) {
       </NavModal>
     </>
   );
-}
-
-export default injectIntl(Nav);
+});

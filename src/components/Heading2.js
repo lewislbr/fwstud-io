@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.h2`
+export const Heading2 = styled.h2`
   font-size: 44px;
   margin-bottom: 5vh;
 

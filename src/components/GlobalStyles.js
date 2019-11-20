@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
-import * as font from '../fonts/font.js';
+import * as font from '../assets/fonts';
 
-export default createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

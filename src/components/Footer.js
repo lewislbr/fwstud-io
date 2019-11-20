@@ -15,7 +15,7 @@ const Container = styled.footer`
   }
 `;
 
-function Footer({ intl }) {
+export const Footer = injectIntl(({ intl }) => {
   return (
     <Container>
       <Link to="/t&p">{intl.formatMessage({ id: 'legal' })}</Link>
@@ -24,6 +24,4 @@ function Footer({ intl }) {
       </p>
     </Container>
   );
-}
-
-export default injectIntl(Footer);
+});

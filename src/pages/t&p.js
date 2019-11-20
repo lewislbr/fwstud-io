@@ -2,11 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { injectIntl } from 'gatsby-plugin-intl';
 
-import Layout from '../components/Layout';
-import Head from '../components/Head';
-
-import Heading1 from '../elements/Heading1';
-import TextBody from '../elements/TextBody';
+import { Head, Heading1, Layout, TextBody } from '../components';
 
 const LinkOut = styled.a`
   text-decoration: underline;

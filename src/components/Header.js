@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import Nav from './Nav';
+import { Nav } from '.';
 
 const TopLine = styled.div`
   width: 100%;
@@ -58,7 +58,7 @@ const Logo = styled.p`
   }
 `;
 
-function Header({ intl }) {
+export const Header = injectIntl(({ intl }) => {
   return (
     <Bar>
       <TopLine />
@@ -70,6 +70,4 @@ function Header({ intl }) {
       </Wrapper>
     </Bar>
   );
-}
-
-export default injectIntl(Header);
+});

@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Header from './Header';
-import Footer from './Footer';
-
-import GlobalStyles from '../elements/GlobalStyles';
+import { GlobalStyles, Header, Footer } from '.';
 
 const Wrapper = styled.div`
   padding: 0 var(--sides-padding-desktop);
@@ -16,7 +13,7 @@ const Wrapper = styled.div`
   }
 `;
 
-function Layout({ children }) {
+export const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyles />
@@ -27,6 +24,4 @@ function Layout({ children }) {
       </Wrapper>
     </>
   );
-}
-
-export default Layout;
+};

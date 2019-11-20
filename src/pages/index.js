@@ -2,16 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import Layout from '../components/Layout';
-import Head from '../components/Head';
+import { Button, Head, Heading1, Heading2, Layout } from '../components';
 
-import Heading1 from '../elements/Heading1';
-import Heading2 from '../elements/Heading2';
-import Button from '../elements/Button';
-
-import graphicdesign from '../images/graphic-design.png';
-import webdesign from '../images/web-design.png';
-import branding from '../images/branding.png';
+import { branding, graphicdesign, webdesign } from '../assets/images';
 
 const HeroText = styled(Heading1)`
   margin-bottom: 25vh;

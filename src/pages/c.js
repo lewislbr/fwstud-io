@@ -1,11 +1,7 @@
 import React from 'react';
 import { injectIntl } from 'gatsby-plugin-intl';
 
-import Layout from '../components/Layout';
-import Head from '../components/Head';
-import Heading1 from '../elements/Heading1';
-import TextBody from '../elements/TextBody';
-import Button from '../elements/Button';
+import { Button, Head, Heading1, Layout, TextBody } from '../components';
 
 function Contact({ intl }) {
   return (
