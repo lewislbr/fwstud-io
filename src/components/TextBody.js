@@ -6,6 +6,5 @@ export const TextBody = styled.p`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5vh;
-
   color: var(--primary-color-light);
 `;

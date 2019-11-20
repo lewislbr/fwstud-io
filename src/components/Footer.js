@@ -7,7 +7,6 @@ const Container = styled.footer`
   padding-bottom: 3vh;
   margin-top: 25vh;
   text-align: left;
-
   font-size: 17px;
 
   @media (max-width: 849px) {

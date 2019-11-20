@@ -7,7 +7,6 @@ const NavIcon = styled.label`
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 33px;
   padding: 10px;
   transform: rotate(0deg);

@@ -27,7 +27,6 @@ const Bar = styled.header`
   z-index: 999;
   height: 8vh;
   top: 0px;
-
   background-color: var(--background-color-translucent);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);

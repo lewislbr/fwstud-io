@@ -14,7 +14,6 @@ body {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,7 +33,6 @@ h6 {
   margin-inline-start: 0;
   -webkit-margin-end: 0;
   margin-inline-end: 0;
-
   display: inline-block;
   font-size: inherit;
 }
@@ -78,7 +76,6 @@ body {
   line-height: 1;
   --sides-padding-desktop: 3%;
   --sides-padding-mobile: 5%;
-
   --background-color: hsl(0, 0%, 99%);
   --background-color-translucent: hsla(0, 0%, 99%, 0.92);
   --primary-color: hsl(150, 3%, 14%);

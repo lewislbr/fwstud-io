@@ -8,7 +8,6 @@ export const Button = styled.a`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5vh;
-
   width: 40%;
   font-size: 28px;
   line-height: 3;
